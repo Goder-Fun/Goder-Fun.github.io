@@ -1,7 +1,7 @@
 :root {
-  --orange: rgb(255,110,0);
-  --cyan: rgb(50,194,185);
-  --purple: rgb(73,46,128);
+  --orange: #ff6e00;
+  --cyan: #32c2b9;
+  --purple: #492e80;
   --nav-height: 64px;
 }
 
@@ -112,7 +112,7 @@ p, a, li, label {
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--orange) 0%, var(--cyan) 90%, var(--purple) 100%);
+  background: linear-gradient(135deg, var(--orange) 65%, var(--cyan) 80%, var(--purple) 100%);
   color: #fff;
   display: flex;
   align-items: center;
