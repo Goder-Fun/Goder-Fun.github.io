@@ -226,6 +226,7 @@ p, a, li, label {
   gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 .feature-card {
