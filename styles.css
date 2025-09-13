@@ -177,7 +177,7 @@ p, a, li, label {
 }
 
 /* Features Section */
-.features {
+/* .features {
   background: linear-gradient(90deg, #fff 70%, rgba(255,110,0,0.10) 100%);
 }
 .features h2 {
@@ -208,6 +208,66 @@ p, a, li, label {
   width: 44px;
   height: 44px;
   margin-bottom: 18px;
+} */
+#features {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: rgb(73,46,128); /* Purple */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  background: rgb(255,110,0); /* Orange */
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  transition: background 0.3s ease;
+}
+
+.feature-card:hover .icon {
+  background: rgb(50,194,185); /* Cyan */
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: rgb(73,46,128); /* Purple */
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #333;
 }
 
 /* Mission Section */
