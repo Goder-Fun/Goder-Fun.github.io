@@ -112,7 +112,7 @@ p, a, li, label {
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--orange) 50%, var(--cyan) 75%, var(--purple) 100%);
+  background: linear-gradient(135deg, var(--orange) 35%, var(--cyan) 75%, var(--purple) 100%);
   color: #fff;
   display: flex;
   align-items: center;
