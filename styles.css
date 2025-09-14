@@ -69,7 +69,8 @@ p, a, li, label {
 }
 
 .nav-logo {
-  height: 40px;
+  transform: scale(1.15); /* enlarge by 15% */
+  transform-origin: center;
   width: auto;
 }
 
@@ -127,8 +128,8 @@ p, a, li, label {
 }
 
 .hero-logo {
-  width: 140px;
-  height: auto;
+  transform: scale(1.15); /* enlarge by 15% */
+  transform-origin: center;
   margin-bottom: 24px;
 }
 
