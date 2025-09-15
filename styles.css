@@ -167,19 +167,11 @@ p, a, li, label {
   text-align: center;
 }
 
-.about-illustration {
-  width: 260px;
-  height: auto;
-  margin-top: 32px;
-  border-radius: 22px;
-  box-shadow: 0 2px 12px rgba(73,46,128,0.08);
-}
-
 .about {
   position: relative;
   width: 100%;
   min-height: 400px;
-  background: url('about_illustration.png') center/cover no-repeat;
+  background: url('imgs/about_illustration.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,7 +179,6 @@ p, a, li, label {
 }
 
 .about-overlay {
-  background: rgba(73, 46, 128, 0.6); /* semi-transparent purple overlay */
   padding: 60px 30px;
   border-radius: 18px;
   max-width: 700px;
@@ -272,19 +263,35 @@ p, a, li, label {
 
 /* Mission Section */
 .mission {
-  background: var(--purple);
+  position: relative;
+  background: url('imgs/mission_background.png') center/cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 70px 16px;
+  padding: 100px 20px;
 }
-.mission h2, .mission p {
+
+.mission::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(73, 46, 128, 0.6); /* semi-transparent purple overlay for readability */
+  z-index: 0;
+}
+
+.mission h2,
+.mission p {
+  position: relative;
+  z-index: 1;
   color: #fff;
 }
+
 .mission p {
   font-size: 1.15rem;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
+  line-height: 1.6;
 }
+
 
 /* Team Section */
 .team h2 {
