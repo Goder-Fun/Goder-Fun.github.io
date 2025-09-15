@@ -11,19 +11,31 @@
 
   <title>Goder | Discover. Celebrate. Live.</title>
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    /* Simple bilingual toggle */
+    [lang="en"] { display: none; }
+    body.pt [lang="pt"] { display: none; }
+    body.pt [lang="en"] { display: inline; }
+  </style>
 </head>
-<body>
+<body class="PT">
+  <!-- Language Switch -->
+  <div style="position:fixed;top:10px;right:20px;z-index:999;">
+    <button onclick="document.body.className='en'">EN</button>
+    <button onclick="document.body.className='pt'">PT</button>
+  </div>
+
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="nav-container">
       <img src="imgs/small_logo.png" alt="Goder Logo" class="nav-logo">
       <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#features" class="nav-link">Features</a></li>
-        <li><a href="#mission" class="nav-link">Mission</a></li>
-        <li><a href="#team" class="nav-link">Team</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#home" class="nav-link"><span lang="en">Home</span><span lang="pt">Início</span></a></li>
+        <li><a href="#about" class="nav-link"><span lang="en">About</span><span lang="pt">Sobre</span></a></li>
+        <li><a href="#features" class="nav-link"><span lang="en">Features</span><span lang="pt">Recursos</span></a></li>
+        <li><a href="#mission" class="nav-link"><span lang="en">Mission</span><span lang="pt">Missão</span></a></li>
+        <li><a href="#team" class="nav-link"><span lang="en">Team</span><span lang="pt">Equipe</span></a></li>
+        <li><a href="#contact" class="nav-link"><span lang="en">Contact</span><span lang="pt">Contato</span></a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -35,90 +47,90 @@
   <section id="home" class="section hero">
     <div class="hero-content">
       <img src="imgs/big_logo.png" alt="Goder Logo Large" class="hero-logo">
-      <h1>Discover. Celebrate. Live with Goder.</h1>
-      <p>Your go-to platform for finding experiences that bring joy.</p>
-      <a href="#about" class="cta-btn">Get Started</a>
+      <h1><span lang="en">Discover. Celebrate. Live with Goder.</span><span lang="pt">Descubra. Comemore. Viva com a Goder.</span></h1>
+      <p><span lang="en">Your go-to platform for finding experiences that bring joy.</span><span lang="pt">Sua plataforma para descobrir experiências que trazem felicidade.</span></p>
+      <a href="#about" class="cta-btn"><span lang="en">Get Started</span><span lang="pt">Começar</span></a>
     </div>
   </section>
   
   <!-- About Section -->
   <section id="about" class="about">
-  <div class="about-overlay">
-    <div class="about-text">
-      <h2>What is Goder?</h2>
-      <p>
-        Goder is a platform designed to make it easy for you to discover the
-        best places, events, and activities around you. From a night out with
-        friends to a special dinner, we help you find the perfect experience.
-      </p>
+    <div class="about-overlay">
+      <div class="about-text">
+        <h2><span lang="en">What is Goder?</span><span lang="pt">O que é a Goder?</span></h2>
+        <p>
+          <span lang="en">Goder is a platform designed to make it easy for you to discover the best places, events, and activities around you. From a night out with friends to a special dinner, we help you find the perfect experience.</span>
+          <span lang="pt">A Goder é uma plataforma criada para facilitar a descoberta dos melhores lugares, eventos e atividades ao seu redor. Seja uma noite com amigos ou um jantar especial, ajudamos você a encontrar a experiência perfeita.</span>
+        </p>
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
   
   <!-- Features Section -->
   <section id="features">
-  <h2>How Goder Helps You</h2>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="icon">🔍</div>
-      <h3>Smart Search</h3>
-      <p>Find the right experience quickly.</p>
-    </div>
+    <h2><span lang="en">How Goder Helps You</span><span lang="pt">Como a Goder Ajuda Você</span></h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">🔍</div>
+        <h3><span lang="en">Smart Search</span><span lang="pt">Busca Inteligente</span></h3>
+        <p><span lang="en">Find the right experience quickly.</span><span lang="pt">Encontre a experiência certa rapidamente.</span></p>
+      </div>
 
-    <div class="feature-card">
-      <div class="icon">✨</div>
-      <h3>Personalized Recommendations</h3>
-      <p>Suggestions tailored to your taste.</p>
-    </div>
+      <div class="feature-card">
+        <div class="icon">✨</div>
+        <h3><span lang="en">Personalized Recommendations</span><span lang="pt">Recomendações Personalizadas</span></h3>
+        <p><span lang="en">Suggestions tailored to your taste.</span><span lang="pt">Sugestões feitas sob medida para você.</span></p>
+      </div>
 
-    <div class="feature-card">
-      <div class="icon">🎉</div>
-      <h3>Event Highlights</h3>
-      <p>Discover what’s happening in your city.</p>
-    </div>
+      <div class="feature-card">
+        <div class="icon">🎉</div>
+        <h3><span lang="en">Event Highlights</span><span lang="pt">Destaques de Eventos</span></h3>
+        <p><span lang="en">Discover what’s happening in your city.</span><span lang="pt">Descubra o que está acontecendo na sua cidade.</span></p>
+      </div>
 
-    <div class="feature-card">
-      <div class="icon">💳</div>
-      <h3>Seamless Payments</h3>
-      <p>Pay with ease through the app.</p>
-    </div>
+      <div class="feature-card">
+        <div class="icon">💳</div>
+        <h3><span lang="en">Seamless Payments</span><span lang="pt">Pagamentos Simples</span></h3>
+        <p><span lang="en">Pay with ease through the app.</span><span lang="pt">Pague facilmente pelo app.</span></p>
+      </div>
 
-    <div class="feature-card">
-      <div class="icon">⭐</div>
-      <h3>Trusted Reviews</h3>
-      <p>Honest feedback from real users.</p>
+      <div class="feature-card">
+        <div class="icon">⭐</div>
+        <h3><span lang="en">Trusted Reviews</span><span lang="pt">Avaliações Confiáveis</span></h3>
+        <p><span lang="en">Honest feedback from real users.</span><span lang="pt">Opiniões honestas de usuários reais.</span></p>
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
   
   <!-- Mission Section -->
   <section id="mission" class="section mission">
-    <h2>Our Mission</h2>
-    <p>As Brazilians, we know how to celebrate life. Our mission is to make happiness and celebration accessible — starting here and sharing it with the world.</p>
+    <h2><span lang="en">Our Mission</span><span lang="pt">Nossa Missão</span></h2>
+    <p>
+      <span lang="en">As Brazilians, we know how to celebrate life. Our mission is to make happiness and celebration accessible — starting here and sharing it with the world.</span>
+      <span lang="pt">Como brasileiros, sabemos como celebrar a vida. Nossa missão é tornar a felicidade e a comemoração acessíveis — começando aqui e levando isso para o mundo.</span>
+    </p>
   </section>
   
   <!-- Team Section -->
   <section id="team" class="section team">
-    <h2>Meet the Founders</h2>
+    <h2><span lang="en">Meet the Founders</span><span lang="pt">Conheça os Fundadores</span></h2>
     <div class="team-grid">
       <div class="team-card">
         <img src="imgs/pedro.jpeg" alt="portrait of founder" class="team-photo">
         <h3>Pedro Rosa</h3>
-        <p>CEO</p>
+        <p><span lang="en">CEO</span><span lang="pt">CEO</span></p>
         <a href="https://www.linkedin.com/in/pedrorosa" target="_blank" class="linkedin-link">LinkedIn</a>
       </div>
       <div class="team-card">
         <img src="imgs/thaua.jpeg" alt="portrait of founder" class="team-photo">
         <h3>Thauã Cavalcante</h3>
-        <p>COO</p>
+        <p><span lang="en">COO</span><span lang="pt">COO</span></p>
         <a href="https://www.linkedin.com/in/thauacavalcante" target="_blank" class="linkedin-link">LinkedIn</a>
       </div>
       <div class="team-card">
         <img src="imgs/joao.jpeg" alt="portrait of founder" class="team-photo">
         <h3>João Reis</h3>
-        <p>CTO</p>
+        <p><span lang="en">CTO</span><span lang="pt">CTO</span></p>
         <a href="https://www.linkedin.com/in/joaoreis13" target="_blank" class="linkedin-link">LinkedIn</a>
       </div>
     </div>
@@ -126,19 +138,19 @@
   
   <!-- Contact Section -->
   <section id="contact" class="section contact">
-    <h2>Get in Touch</h2>
+    <h2><span lang="en">Get in Touch</span><span lang="pt">Entre em Contato</span></h2>
     <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:contato@goder.fun">contato@goder.fun</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+5511959802020">(11) 95980-2020</a></p>
+      <p><strong><span lang="en">Email:</span><span lang="pt">Email:</span></strong> <a href="mailto:contato@goder.fun">contato@goder.fun</a></p>
+      <p><strong><span lang="en">Phone:</span><span lang="pt">Telefone:</span></strong> <a href="tel:+5511959802020">(11) 95980-2020</a></p>
     </div>
     <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="name" placeholder="Name / Nome" required>
       <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" placeholder="Message" required></textarea>
-      <button type="submit">Submit</button>
+      <textarea name="message" placeholder="Message / Mensagem" required></textarea>
+      <button type="submit"><span lang="en">Submit</span><span lang="pt">Enviar</span></button>
     </form>
     <footer class="footer">
-      <small>© Goder 2025.</small>
+      <small><span lang="en">© Goder 2025.</span><span lang="pt">© Goder 2025.</span></small>
     </footer>
   </section>
   
