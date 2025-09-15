@@ -16,13 +16,44 @@
     [lang="pt"] { display: none; }
     body.pt [lang="pt"] { display: inline; }
     body.pt [lang="en"] { display: none; }
+
+    #lang-toggle {
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    } 
+    #lang-toggle:hover {
+      background: var(--cyan);
+    }
+
   </style>
+  <script>
+    function toggleLang() {
+      const body = document.body;
+      const button = document.getElementById('lang-toggle');
+
+      if (body.classList.contains('pt')) {
+        body.className = 'en';
+        button.textContent = '🇧🇷 PT';
+      } else {
+        body.className = 'pt';
+        button.textContent = '🇺🇸 EN';
+      }
+    }
+</script>
+
 </head>
 <body class="pt">
   <!-- Language Switch -->
+   <!-- Language Switch -->
   <div style="position:fixed;top:10px;right:20px;z-index:999;">
-    <button onclick="document.body.className='en'">EN</button>
-    <button onclick="document.body.className='pt'">PT</button>
+    <button id="lang-toggle" onclick="toggleLang()">🇺🇸 EN</button>
   </div>
 
   <!-- Navigation Bar -->
