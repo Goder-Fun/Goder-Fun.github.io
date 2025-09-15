@@ -175,6 +175,38 @@ p, a, li, label {
   box-shadow: 0 2px 12px rgba(73,46,128,0.08);
 }
 
+.about {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background: url('about_illustration.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.about-overlay {
+  background: rgba(73, 46, 128, 0.6); /* semi-transparent purple overlay */
+  padding: 60px 30px;
+  border-radius: 18px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.about-text h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-text p {
+  color: #f8f8f8;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+
 #features {
   padding: 80px 20px;
   text-align: center;
@@ -236,6 +268,7 @@ p, a, li, label {
   font-size: 0.95rem;
   color: #333;
 }
+
 
 /* Mission Section */
 .mission {
