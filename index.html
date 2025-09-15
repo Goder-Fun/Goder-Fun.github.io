@@ -18,20 +18,22 @@
     body.pt [lang="en"] { display: none; }
 
     #lang-toggle {
-    background: var(--orange);
-    color: #fff;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s;
-    } 
-    #lang-toggle:hover {
-      background: var(--cyan);
+      background: #f9f9f9;        /* soft off-white background */
+      color: #333;                /* neutral dark gray text */
+      border: 1px solid #ccc;     /* light gray border */
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
     }
 
+    #lang-toggle:hover {
+      background: #eaeaea;        /* slightly darker gray on hover */
+      border-color: #bbb;
+      color: #111;                /* deepen text color */
+    }
   </style>
   <script>
     function toggleLang() {
